@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beauty Score</title>
+    <title>Avatar</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -20,8 +20,8 @@
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
         header .container {
+             background: #03A9F4;
             display: flex;
-            background: #03A9F4;
             justify-content: space-between;
             align-items: center;
             max-width: 1200px;
@@ -167,58 +167,64 @@
     </header>
 
     <div class="hero">
-        <h2>Beauty Score & Face Shape App</h2>
+        <h2>Many Avatar App</h2>
     </div>
-
+    <div></div>
     <div class="container">
         <div class="content">
             <h3>Privacy Policy</h3>
             <ul>
                 <li>
-                    <h4>Does this app collect or use personal information?</h4>
-                    <p><strong>No</strong>, If a user buys an in-app purchase (IAP), their email ID is used as a unique identifier to associate the purchase with their account, but it is only used for the purpose of restoring the purchase later on, such as when the user switches to a different device or reinstalls the app.</p>
-                    <p><h4>This app performs image processing on the local device only. The internet is only used for in-app purchases (IAPs) and displaying ads. Images are not sent to the server.</h4></p>
+                    <h4>Do we retain the Face Data?</h4>
+                    <p>Our app does not retain any input face data. Once the analysis is complete, all input face data is immediately discarded.</p>
                 </li>
                 <li>
-                    <p><h4>This Application doesn't</h4></p>
+                    <h4>Do we store the Result Data & for how much time?</h4>
+                    <p>Generated data from the analysis, such as age estimation and progression results, may be temporarily stored on our servers for up to 1 hour to ensure the smooth functioning of the service. This data is automatically deleted after this time frame.</p>
+                </li>
+                <li>
+                    <h4>Is data shared with third parties?</h4>
+                    <p>We use servers for processing face data. However, we do not share input face data with any third parties. The processed results are temporarily stored for the aforementioned duration.</p>
+                </li>
+                <li>
+                    <h4>Does this application collect or use your personal information?</h4>
+                    <p>This application uses an internet connection to analyze images with server services. Neither the app nor the server keeps your data.</p>
+                </li>
+                <li>
+                    <h4>This Application doesn't:</h4>
                     <ol>
-                        <li>Collect & use any personal information other than just analyzing & showing the immediate result. (Without storing them)</li>
-                        <li>Store any personal data</li>
-                        <li>Share it with third parties</li>
+                        <li>Collect & use any personal information other than just analyzing & showing the immediate result. Age estimation and progression results may be temporarily stored on our servers for up to 1 hour to ensure the smooth functioning of the service.</li>
+                        <li>Store any personal data.</li>
+                        <li>Share it with third parties.</li>
                     </ol>
                 </li>
                 <li>
-                    <p><h4>The SDK's App uses for IAP, Analytics, Crashlytics & Ads</h4></p>
-                    <table style="border-spacing:0 5px; font-size: 15px;">
+                    <h4>The SDK's App uses for IAP, Analytics, Crashlytics & Ads</h4>
+                    <table>
                         <tr>
                             <th>Name</th>
                             <th>Purpose</th>
                             <th>Privacy</th>
                         </tr>
                         <tr>
+                            <td>Amazon</td>
+                            <td>Analyzing image, photos</td>
+                            <td><a href="https://docs.aws.amazon.com/rekognition/latest/dg/data-protection.html">Amazon Rekognition Services</a></td>
+                        </tr>
+                        <tr>
                             <td>Google Play</td>
                             <td>In-app billing</td>
-                            <td>• Google Play privacy policy: <a href="https://play.google.com/about/privacy-security-deception">https://play.google.com/about/privacy-security-deception</a><br><a href="https://policies.google.com/privacy?hl=en">https://policies.google.com/privacy?hl=en</a></td>
+                            <td><a href="https://play.google.com/about/privacy-security-deception">Google Play privacy policy</a><br><a href="https://policies.google.com/privacy?hl=en">Google privacy policy</a></td>
                         </tr>
                         <tr>
                             <td>App Store</td>
                             <td>In-app billing</td>
-                            <td>• App Store privacy policy: <a href="https://www.apple.com/in/privacy/">https://www.apple.com/in/privacy/</a></td>
+                            <td><a href="https://www.apple.com/in/privacy/">App Store privacy policy</a></td>
                         </tr>
                         <tr>
-                            <td>RevenueCat</td>
-                            <td>In-app billing</td>
-                            <td>• RevenueCat privacy policy: <a href="https://www.revenuecat.com/privacy/">https://www.revenuecat.com/privacy/</a></td>
-                        </tr>
-                        <tr>
-                            <td>Firebase</td>
-                            <td>Analytics, Crashlytics, Storing restore purchase data, Authenticating</td>
-                            <td>• Firebase Privacy Policy: <a href="https://firebase.google.com/support/privacy">https://firebase.google.com/support/privacy</a></td>
-                        </tr>
-                        <tr>
-                            <td>Facebook Audience Network & Admob</td>
+                            <td>Admob</td>
                             <td>The Advertisers are advertising Service Providers. Their targeted advertising SDKs collect information about your browsing activity across multiple websites and online services in order to provide you with relevant advertisements on the App and Services of third parties. The information collected using these advertising SDK does not disclose your identity, and helps us analyze the effectiveness of our advertising.</td>
-                            <td>• AdMob: <a href="https://policies.google.com/privacy?hl=en">https://policies.google.com/privacy?hl=en</a><br>• Facebook Audience Network: <a href="https://www.facebook.com/about/privacy/">https://www.facebook.com/about/privacy/</a></td>
+                            <td><a href="https://policies.google.com/privacy?hl=en">AdMob</a></td>
                         </tr>
                     </table>
                 </li>
